@@ -4,29 +4,29 @@ set -e
 
 git submodule update --init --recursive
 cd osbase
-echo "Building bketelsen/osbase"
-docker build -t bketelsen/osbase .
-docker push bketelsen/osbase
+echo "Building jcaldwell/osbase"
+docker build -t jcaldwell/osbase .
+docker push jcaldwell/osbase
 
 cd ../commandbase
-echo "Building bketelsen/commandbase"
-docker build -t bketelsen/commandbase .
-docker push bketelsen/commandbase
+echo "Building jcaldwell/commandbase"
+docker build -t jcaldwell/commandbase .
+docker push jcaldwell/commandbase
 
 cd ../uibase
-echo "Building bketelsen/uibase"
-docker build -t bketelsen/uibase .
-docker push bketelsen/uibase
+echo "Building jcaldwell/uibase"
+docker build -t jcaldwell/uibase .
+docker push jcaldwell/uibase
 
 cd ../useradd
-echo "Building bketelsen/useradd"
-docker build -t bketelsen/useradd .
-docker push bketelsen/useradd
+echo "Building jcaldwell/useradd"
+docker build -t jcaldwell/useradd .
+docker push jcaldwell/useradd
 
 cd ../devenv 
-echo "Building bketelsen/devenv"
-docker build -t bketelsen/devenv .
-docker push bketelsen/devenv
+echo "Building jcaldwell/devenv"
+docker build -t jcaldwell/devenv .
+docker push jcaldwell/devenv
 
 cd ..
 

@@ -1,8 +1,8 @@
-FROM bketelsen/uibase
+FROM jcaldwell/uibase
 
-MAINTAINER Brian Ketelsen <bketelsen@gmail.com>
+MAINTAINER Jeffery Caldwell <jeffery.caldwell@gmail.com>
 USER root
-ENV user bketelsen 
+ENV user jcaldwell 
 RUN adduser $user && echo "$user:$user" | chpasswd && adduser $user sudo
 
 ADD supervisord.conf /home/$user/supervisord.conf

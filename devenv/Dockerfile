@@ -1,7 +1,7 @@
-FROM bketelsen/useradd
+FROM jcaldwell/useradd
 
-MAINTAINER Brian Ketelsen <bketelsen@gmail.com>
-ENV user bketelsen
+MAINTAINER Jeffery Caldwell <jeffery.caldwell@gmail.com>
+ENV user jcaldwell
 USER root
 RUN chsh -s /usr/bin/zsh $user
 ADD stowDotfiles.sh /home/$user/stowDotfiles.sh

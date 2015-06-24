@@ -1,6 +1,6 @@
-FROM dockerfile/ubuntu
+FROM jcaldwell/ubuntu
 
-MAINTAINER Brian Ketelsen <bketelsen@gmail.com>
+MAINTAINER Jeff Caldwell <jeffery.caldwell@gmail.com>
 
 RUN apt-get update && apt-get install -y openssh-server 
 
